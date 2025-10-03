@@ -3,7 +3,7 @@
 const fizzBuzz = require('./q3');
 const somaFibonacciPares = require('./q4');
 const manipulacaoArrayLinguagens = require('./q5');
-// // const manipulacaoObjeto = require('./q6');
+const manipulacaoObjeto = require('./q6');
 // // const elementosComuns = require('./q7');
 // // const encontrarDuplicados = require('./q8');
 const criarEstudante = require('./q9');

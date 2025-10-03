@@ -29,3 +29,7 @@
  * - Use métodos como filter(), includes(), ou Set para implementar
  * - A função seja exportada com module.exports
  */
+
+function elementosComuns(){
+    
+}

@@ -57,3 +57,31 @@
  */
 
 
+function manipulacaoObjeto(){
+
+
+    let livro = {
+        titulo : "O Alquimista",
+        autor : "Paulo Coelho",
+        anoPublicacao : 1988
+    };
+
+    console.log(livro.titulo);
+
+    livro.anoPublicacao = 1992;
+
+    livro.editora = "Rocco";
+
+    livro.getIdade = function() {
+        return new Date().getFullYear() - this.anoPublicacao;
+    };
+
+    livro.getDescricao = function() {
+        return `O livro "${this.titulo}" foi escrito por "${this.autor}" e publicado em "${this.anoPublicacao}".`;
+    }
+
+    return livro;
+
+} 
+
+module.exports = manipulacaoObjeto;
