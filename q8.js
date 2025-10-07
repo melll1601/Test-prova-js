@@ -40,3 +40,23 @@
  * - A função seja exportada com module.exports
  */
 
+function encontrarDuplicados(texto){
+    
+    texto = texto.toLowerCase();
+
+    const contagem = {};
+
+    for(let char of texto){
+        if(contagem[char]) contagem[char]++;
+        else contagem[char] = 1;
+    }
+
+    const resultado = {};
+    for(let char in contagem) {
+        if (contagem[char] > 1) resultado[char] = contagem[char];
+    }
+    
+    return resultado;
+}
+
+module.exports = encontrarDuplicados ;

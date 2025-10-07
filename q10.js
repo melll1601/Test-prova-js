@@ -57,3 +57,8 @@
  * - Use métodos como slice(), shift(), pop(), unshift(), push(), reduce(), Math.max(), filter()
  * - A função seja exportada com module.exports
  */
+
+
+function manipularArray(){
+    
+}
