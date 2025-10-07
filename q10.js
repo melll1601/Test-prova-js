@@ -59,6 +59,36 @@
  */
 
 
-function manipularArray(){
+function manipularArray(array){
+
+    let copiaArray =[ ... array];
+
+    copiaArray.shift();
+
+    copiaArray.pop();
+
+    copiaArray.unshift(0);
+
+    copiaArray.push(10);
     
+
+    let soma = copiaArray.reduce(function(total, numero){
+        return total+numero;
+    }, 0);
+
+
+    let maiorNumero = Math.max(... copiaArray);
+
+    let numerosPares = copiaArray.filter(function(numero){
+        return numero % 2 === 0;
+    });
+
+    return {
+        arrayCopia: copiaArray,
+        soma: soma,
+        maiorNumero: maiorNumero,
+        numerosPares: numerosPares
+    };
 }
+
+module.exports = manipularArray;

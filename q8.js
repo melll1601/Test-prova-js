@@ -52,7 +52,7 @@ function encontrarDuplicados(texto){
     }
 
     const resultado = {};
-    for(let char in contagem) {
+    for(let char of Object.keys(contagem).sort()) {
         if (contagem[char] > 1) resultado[char] = contagem[char];
     }
     

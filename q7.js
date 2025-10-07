@@ -30,6 +30,13 @@
  * - A função seja exportada com module.exports
  */
 
-function elementosComuns(){
+
+function elementosComuns(array1, array2){
+
+    const repetidos = array1.filter(item => array2.includes(item));
+
+    return [ ... new Set(repetidos)];
     
 }
+
+module.exports = elementosComuns;
