@@ -188,9 +188,7 @@ describe('Prova de JavaScript - Testes Automatizados com Nota', () => {
       let pontuacao = 0;
       try {
         const resultado = encontrarDuplicados('programacao web e mobile');
-        const esperado = { r: 2, o: 3, a: 3, m: 2, ' ': 3, e: 3, b: 2 };
-        // Para comparar objetos, a ordem das chaves importa com JSON.stringify. Uma abordagem mais robusta seria comparar chave por chave.
-        // Mas para este caso, vamos manter a simplicidade.
+        const esperado = { ' ': 3, a: 3, b: 2, e: 3, m: 2, o: 3, r: 2 };
         const cenariosCorretos =
           resultado &&
           JSON.stringify(

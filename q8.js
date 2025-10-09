@@ -59,4 +59,6 @@ function encontrarDuplicados(texto){
     return resultado;
 }
 
+console.log(encontrarDuplicados('programacao web e mobile'));
+
 module.exports = encontrarDuplicados ;
